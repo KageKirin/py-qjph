@@ -1,0 +1,28 @@
+[build-system]
+requires = ["wheel", "setuptools", "attrs>=17.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qjph"
+description = "Quick Json Parser Hack"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">= 3.10"
+license = {text = "MIT"}
+
+authors = [
+  {name = "kagekirin", email = "kagekirin@gmail.com"},
+]
+maintainers = [
+  {name = "kagekirin", email = "kagekirin@gmail.com"},
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+
+[project.urls]
+Homepage = "https://github.com/KageKirin/py-qjph"
+Documentation = "https://github.com/KageKirin/py-qjph"
+Repository = "https://github.com/KageKirin/py-qjph.git"
