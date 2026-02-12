@@ -17,12 +17,20 @@ maintainers = [
   {name = "kagekirin", email = "kagekirin@gmail.com"},
 ]
 
-[tool.pytest.ini_options]
-testpaths = [
-    "tests",
-]
-
 [project.urls]
 Homepage = "https://github.com/KageKirin/py-qjph"
 Documentation = "https://github.com/KageKirin/py-qjph"
 Repository = "https://github.com/KageKirin/py-qjph.git"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=9.0",
+]
+
+[tool.pytest]
+minversion = "9.0"
+addopts = ["-ra", "-q"]
+pythonpath = ["src"]
+testpaths = [
+  "tests",
+]
