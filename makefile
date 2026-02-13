@@ -18,6 +18,9 @@ t test:
 .PHONY: pack
 p pack:
 	uv build
+	ls -alG dist/qjph-*.tar.gz dist/qjph-*.whl
+	tar tvf dist/qjph-*.tar.gz
+	tar tvf dist/qjph-*.whl
 
 .PHONY: clean
 c clean:
